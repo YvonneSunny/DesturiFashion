@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Purchase Page</title>
+  <link rel="stylesheet" href="DFashion.css">
+  <style>
+    #img {
+      width: 100%;
+      height: auto;
+      max-width: 150px;
+    }
+
+    #options {
+      position: relative;
+      text-align: center; /* Center the content horizontally */
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1>Desturi__________Fashion</h1>
+  </header>
+
+  <nav>
+    <a href="DESTURI_Fashion.html">Home</a>
+    <a href="Desturi_purchase.html">Purchase</a>
+    <a href="DFeedback.html">Feedback</a>
+  </nav> <!-- Fixed missing closing angle bracket -->
+
+  <div>
+    <p class="container"><b>Selected Item</b></p>
+    <button class="arrow-button left-arrow" onclick="changeImage('left')">
+      <img id="img" src="C:\Users\Yvonne\Documents\Desturi_routefolder\Img\Arrow_Left.jpg" alt="Left Arrow">
+    </button>
+    <img id="displayedImage" src="C:/Users/Yvonne/Documents/Desturi_routefolder/Img/Fashion1.jpg.jpg" alt="Displayed Image">
+    <button class="arrow-button right-arrow" onclick="changeImage('right')">
+      <img id="img" src="C:\Users\Yvonne\Documents\Desturi_routefolder\Img\Arrow_Right.jpg" alt="Right Arrow">
+    </button>
+  </div>
+  <script src="Desturi.js"></script>
+
+  <div>
+    <h2 class="container">Fill in the form below to make your payment</h2>
+  </div>
+  <div>
+    <p class="container"><b>Customer Details</b></p>
+    <form class="container">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="fname">Email Address:</label><br>
+      <input type="text" id="Email" name="Email"><br>
+      <label for="fname">Phone Number:</label><br>
+      <input type="text" id="Phone" name="phone"><br>
+    </form>
+  </div>
+  <br>
+  <br>
+    <form class ="container">
+  <label for="payment"><b>Payment Options:</b></label><br>
+  <input type="radio" id="paypal" name="payment" value="paypal">
+  <label for="paypal">Paypal</label><br>
+  <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+  <label for="bank-transfer">Bank Transfer</label><br>
+  <input type="radio" id="credit-card" name="payment" value="credit-card">
+  <label for="credit-card">Credit Card</label><br><br>
+  
+  <div id="payment-details">
+    <label for="details">Payment Details:</label><br>
+    <textarea id="details" name="details" rows="4" cols="50"></textarea>
+  </div>   
+  </form>
+  <br>
+<p class="container"><b>Order Details</b></p> 
+ <form class="container">
+      <label for="quantity">Quantity:</label><br>
+      <input type="number" id="quantity" name="quantity" required><br>
+      <label for="totalPrice">Total Price:</label><br>
+      <input type="text" id="totalPrice" name="totalPrice" required><br> 
+</form>
+<br>
+ <div class="container">
+    <label for="shipping"><b>Shipping Details:</b></label><br>
+    <textarea id="shipping" name="shipping" rows="4" cols="50"></textarea><br>
+	<button type="submit" class="container">Place Order</button>
+  </div>
+ <footer class="footer">
+    <p><em>&copy; 2023 Desturi__________Fashion. All rights reserved.</em></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+  background-color: white;
+  font-family: 'fantasy', sans-serif;
+  margin: 20px;  
+}
+nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+
+        .nav-item {
+            border: 1px solid black;
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: white;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            
+        }
+
+        .nav-item: hover {
+            background-color: white;
+        }
+   
+
+img {
+    width: 500px; 
+    height: 500px; 
+    object-fit: contain; 
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+}
+
+.arrow-button {
+	max-width: 100%;
+    height: auto;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-arrow {
+    left: 100px; 
+}
+
+.right-arrow {
+    right: 100px;
+}
+
+  .paragraphs {
+            flex: 1;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+  }
+			
+.paragraphmargin
+{
+            display: flex;
+            justify-content: space-between;
+        }
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: white;
+  color: black;
+}	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+        
+
